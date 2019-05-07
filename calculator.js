@@ -29,11 +29,13 @@ function operate(x, y, operator) {
     }
 }
 
-let strDigits = [0, 1, 2, "3", "4", "5", "6", "7", "8", "9"];
+let strDigits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 const display = document.querySelector("#view");
 
 const buttons = document.querySelectorAll('button');
+
+//document.addEventListener('click', event => console.log(event.target.textContent));
 
 buttons.forEach((button) => {
 
@@ -41,8 +43,9 @@ buttons.forEach((button) => {
         if (strDigits.includes(button.textContent)) {
             if (display.textContent === "0") {
                 display.textContent = button.textContent;
-            }
+            } else {
             display.textContent += button.textContent;
+            }
         }
     });
 });
