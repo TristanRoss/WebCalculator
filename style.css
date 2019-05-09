@@ -22,6 +22,7 @@ html {
     display: grid;
     grid-template-columns: 70px 70px 70px 70px;
     margin: auto;
+    margin-bottom: 50px;
     width: 280px;
 }
 
@@ -42,3 +43,78 @@ button::-moz-focus-inner {
 button:hover {
     background-color: purple;
 }
+
+@keyframes linkRoll {
+    0%  {left: -25%;}
+    100% {left: 0%;}
+  }
+  
+  @keyframes opacList {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    animation-name: opacList;
+    animation-duration: 2.6s;
+  }
+  
+  ul li {
+    padding: 1em;
+    font-size: 1.5em;
+    margin-right: 50px;
+    position: relative;
+    animation-name: linkRoll;
+    animation-duration: 2.6s;
+    animation-timing-function: ease-in-out;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    ul {
+      list-style-type: none;
+      display: table;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+  
+    ul li {
+      margin-bottom: 1em;
+      padding: 1em;
+      font-size: 1.2em;
+      margin-right: 0px;
+    }
+  }
+
+  a {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a:visited {
+    color: #f442e2;
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: #f442e2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #42e8f4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #42e8f4;
+    text-decoration: none;
+  }
