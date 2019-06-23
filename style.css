@@ -1,9 +1,9 @@
 html {
-  background: rgb(0,0,0);
-  background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(66,69,175,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(66,69,175,1) 100%);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(66,69,175,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#4245af",GradientType=1); 
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(66,69,175,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(66,69,175,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(66,69,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#4245af",GradientType=1); 
     color: white;
 }
 
