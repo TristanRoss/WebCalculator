@@ -2,36 +2,55 @@
 <html>
     <head>
         <title>Calculator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        
-        <div id="view">0</div>
-        <div id="calculator">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>&divide</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>&times</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
-            <button>C</button>
-            <button>0</button>
-            <button>+</button>
-            <button>=</button>
+        <div id="particles-js"></div>
+
+        <div class="card">
+            <div id="view">0</div>
+            <div id="calculator">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&divide</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>&times</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>-</button>
+                <button>C</button>
+                <button>0</button>
+                <button>+</button>
+                <button>=</button>
+            </div>
         </div>
         <script type="text/javascript" src="calculator.js"></script>
-    </body>
 
-    <ul>
-        <li><a href="http://tristanross.github.io">Portfolio Homepage</a></li>
-        <li><a href="http://github.com/TristanRoss/WebCalculator">This Project's Repository</a></li>
-    </ul>
+        <div class="card">
+            <p class="lead text-center px-5 py-0 paragraph">
+                <a class="btn btn-outline-primary btn-lg" href="https://tristanross.github.io/New-Portfolio" id="portfolio">Portfolio Homepage</a>
+                <a class="btn btn-outline-primary btn-lg" href="https://github.com/TristanRoss/WebCalculator" id="github"><i class="fab fa-github"></i></a>             
+            </p>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/ba0d5dd0c3.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <script>
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('particles.json loaded...');
+            });
+        </script>
+    </body>
 </html>
